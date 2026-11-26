@@ -669,3 +669,103 @@ footer {
         font-size: 25px;
     }
 }
+
+/* WEEKENDWISE PHOTO COLLAGES */
+
+.photo-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.photo-collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.postcard {
+    max-width: 230px;
+    padding: 10px 10px 18px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.postcards-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+@media (max-width: 600px) {
+    .postcards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* POLAROID PHOTO GALLERY */
+
+.gallery-popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 35, 40, 0.9);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery-popup.active {
+    display: flex;
+}
+
+.gallery-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.gallery-content h2 {
+    color: #126E75;
+    font-family: 'DM Serif Display', serif;
+}
+
+.gallery-content img,
+.gallery-content video {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.gallery-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: #E85D75;
+    color: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.gallery-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}

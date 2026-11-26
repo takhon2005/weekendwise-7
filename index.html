@@ -34,7 +34,88 @@
             <a href="#plan" class="button">Plan My Weekend</a>
         </section>
 
-        <section class="planner" id="plan">
+       <!-- HERO -->
+<section class="hero" id="home">
+    <!-- Existing hero content -->
+</section>
+
+<!-- POSTCARDS -->
+<section class="postcards-section" id="explore">
+
+    <div class="postcards-heading">
+        <h2>Explore Nairobi</h2>
+        <p>Discover places worth exploring this weekend.</p>
+    </div>
+
+    <div class="postcards-container">
+
+        <div class="postcard" onclick="openGallery('Nature & Picnics')">
+            <div class="photo-collage">
+                <img src="images/nature.jpg" alt="Nature">
+                <img src="images/bike ride.jpg" alt="Bike ride">
+            </div>
+            <h3>Nature & Picnics</h3>
+            <p>Explore green spaces and outdoor adventures.</p>
+        </div>
+
+        <div class="postcard" onclick="openGallery('Art & Culture')">
+            <div class="photo-collage">
+                <img src="images/art.jpg" alt="Art">
+                <img src="images/culture.jpg" alt="Culture">
+            </div>
+            <h3>Art & Culture</h3>
+            <p>Discover Nairobi's art and heritage.</p>
+        </div>
+
+        <div class="postcard" onclick="openGallery('Food & Dining')">
+            <div class="photo-collage">
+                <img src="images/food.jpg" alt="Food">
+                <img src="images/food 2.jpg" alt="Food">
+                <img src="images/restaurant.jpg" alt="Restaurant">
+            </div>
+            <h3>Food & Dining</h3>
+            <p>Discover lovely places to eat and unwind.</p>
+        </div>
+
+        <div class="postcard" onclick="openGallery('Entertainment')">
+            <div class="photo-collage">
+                <img src="images/entertainment.jpg" alt="Entertainment">
+            </div>
+            <h3>Entertainment</h3>
+            <p>Find exciting ways to spend your weekend.</p>
+        </div>
+
+    </div>
+</section>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EXISTING PLANNER -->
+<section class="planner" id="plan"></section>
+
             <h2>Let's plan your weekend</h2>
             <p>Tell us what you're in the mood for.</p>
 
@@ -74,5 +155,26 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- YOUR EXISTING WEBSITE CODE -->
+
+<!-- POLAROID GALLERY POPUP -->
+<div class="gallery-popup" id="galleryPopup">
+    <div class="gallery-content">
+        <button class="gallery-close" onclick="closeGallery()">×</button>
+        <h2 id="galleryTitle">Explore Nairobi</h2>
+        <div class="gallery-items" id="galleryItems"></div>
+    </div>
+</div>
+
+<div class="gallery-popup" id="galleryPopup">
+    <div class="gallery-content">
+        <button class="gallery-close" onclick="closeGallery()">×</button>
+        <h2 id="galleryTitle">Explore Nairobi</h2>
+        <div class="gallery-items" id="galleryItems"></div>
+    </div>
+</div>
+
+</body>
+</html>
 </body>
 </html>

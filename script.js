@@ -77,4 +77,20 @@ weekendForm.addEventListener("submit", function(event) {
         }).join("")}
         <p>Prices are planning estimates. Confirm current fees before visiting.</p>
     `;
-});
+})
+function openGallery(category) {
+    const popup = document.getElementById("galleryPopup");
+    const title = document.getElementById("galleryTitle");
+    const items = document.getElementById("galleryItems");
+
+    title.textContent = category;
+    items.innerHTML = "";
+
+    galleryData[category].forEach(media => {
+        const element = document.createElement("img");
+        element.src = media.src;
+        items.appendChild(element);
+    });
+
+    popup.classList.add("active");
+}
